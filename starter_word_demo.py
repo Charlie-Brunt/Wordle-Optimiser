@@ -11,7 +11,6 @@ frequencies = letterFrequency(answers)
 probabilities = letterProbability(frequencies)
 wordScoreList = normalisedScores(wordScores(words, probabilities))
 
-
 for i in range(20):
     print(f"[{i+1}]", wordScoreList[i][0], round(wordScoreList[i][1], 1))
 print(f"[{wordScoreList.index(wordScoreList[-1])+1}]", wordScoreList[-1][0], round(wordScoreList[-1][1], 1))
