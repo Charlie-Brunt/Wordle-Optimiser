@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from wordstatistics import letterFrequency, letterProbability, normalisedScores, wordScores
+from wordStatistics import letterFrequency, letterProbability, normalisedScores, wordScores
 
 with open('answers_wordlist.txt') as f:
     answers = f.readlines()
