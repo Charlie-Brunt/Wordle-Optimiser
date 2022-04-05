@@ -90,5 +90,9 @@ def main():
     plt.grid()
     plt.show()
 
+    plt.hist(x=scoreList, bins='auto', color='#0504aa', alpha=0.7, rwidth=0.85)
+    plt.title("score histogram")
+    plt.show()
+
 if __name__ == '__main__':
     main()
