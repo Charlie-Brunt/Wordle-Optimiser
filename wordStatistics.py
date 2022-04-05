@@ -80,13 +80,14 @@ def main():
     frequencyList = [i[1] for i in sortByFrequency]
 
     plt.bar(letterList, frequencyList)
-    plt.title("letter vs. frequency")
+    plt.title("letter frequencies")
     plt.show()
 
     wordsList = np.linspace(0, 12972, 12972)
     scoreList = [i[1] for i in wordScoreList]
-    plt.plot(wordsList, scoreList)
+    plt.plot(scoreList, wordsList)
     plt.title("word rank vs. score")
+    plt.grid()
     plt.show()
 
 if __name__ == '__main__':
